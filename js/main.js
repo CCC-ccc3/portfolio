@@ -5,7 +5,7 @@
    2. 导航跟随滚动自动高亮当前区块
    3. 页面滚动渐入（IntersectionObserver）
    4. 图片懒加载
-   5. 移动端导航高亮偏移修正
+   5. 深浅色主题切换（localStorage 记忆选择）
    ============================================================ */
 
 (function () {
@@ -97,4 +97,36 @@
       img.src = img.dataset.src;
     });
   }
+
+  /* ---------- 5. 深浅色主题切换（localStorage 记忆选择） ---------- */
+  const THEME_KEY = 'portfolio-theme';
+  const themeToggle = document.getElementById('theme-toggle');
+
+  function applyTheme(theme) {
+    const isDark = theme === 'dark';
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    themeToggle.setAttribute('aria-label', isDark ? '切换到浅色主题' : '切换到深色主题');
+  }
+
+  function toggleTheme() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
+    applyTheme(next);
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch (err) {
+      /* 隐私模式等场景下写入失败时忽略，仅本次生效 */
+    }
+  }
+
+  // 初始化：优先读取用户上一次的选择，无记录时默认浅色
+  let savedTheme = null;
+  try {
+    savedTheme = localStorage.getItem(THEME_KEY);
+  } catch (err) {
+    /* 读取失败时按默认浅色处理 */
+  }
+  applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+
+  themeToggle.addEventListener('click', toggleTheme);
 })();
