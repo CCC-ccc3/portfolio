@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf9f0"/>
+      <stop offset="1" stop-color="#f1e2c7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.1" r="0.55">
+      <stop offset="0" stop-color="#e3b882" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#e3b882" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d49a66"/>
+      <stop offset="1" stop-color="#b0794f"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#6f5c44" flood-opacity="0.18"/></filter>
+  </defs>
+  <rect width="800" height="560" fill="url(#bg)"/>
+  <rect width="800" height="560" fill="url(#glow)"/>
+  <circle cx="96" cy="470" r="150" fill="#c99257" opacity="0.10"/>
+
+  <!-- 浏览器 -->
+  <rect x="150" y="64" width="500" height="438" rx="18" fill="#fffdf9" filter="url(#sh)"/>
+  <rect x="150" y="64" width="500" height="52" rx="18" fill="#f3e6d2"/>
+  <rect x="150" y="98" width="500" height="18" fill="#f3e6d2"/>
+  <circle cx="176" cy="92" r="6" fill="#d8c9ad"/>
+  <rect x="300" y="84" width="200" height="16" rx="8" fill="#ffffff"/>
+
+  <!-- 商品卡 行1 -->
+  <g transform="translate(180,146)">
+    <rect x="0"   width="132" height="150" rx="14" fill="#f7efe0"/>
+    <rect x="0"   y="0" width="132" height="86" rx="14" fill="#e9d6b6"/>
+    <rect x="14"  y="102" width="60" height="7" rx="3.5" fill="#cbbda4"/>
+    <rect x="14"  y="118" width="100" height="7" rx="3.5" fill="#dcd2bd"/>
+    <rect x="14"  y="132" width="46" height="8" rx="8" fill="url(#ac)"/>
+
+    <rect x="176" width="132" height="150" rx="14" fill="#f7efe0"/>
+    <rect x="176" y="0" width="132" height="86" rx="14" fill="#eedab8"/>
+    <rect x="190" y="102" width="54" height="7" rx="3.5" fill="#cbbda4"/>
+    <rect x="190" y="118" width="100" height="7" rx="3.5" fill="#dcd2bd"/>
+    <rect x="190" y="132" width="46" height="8" rx="8" fill="url(#ac)"/>
+
+    <rect x="352" width="132" height="150" rx="14" fill="#f7efe0"/>
+    <rect x="352" y="0" width="132" height="86" rx="14" fill="#ecceaf"/>
+    <rect x="366" y="102" width="58" height="7" rx="3.5" fill="#cbbda4"/>
+    <rect x="366" y="118" width="100" height="7" rx="3.5" fill="#dcd2bd"/>
+    <rect x="366" y="132" width="46" height="8" rx="8" fill="url(#ac)"/>
+  </g>
+
+  <!-- 商品卡 行2 -->
+  <g transform="translate(180,326)">
+    <rect x="0"   width="132" height="140" rx="14" fill="#f7efe0"/>
+    <rect x="0"   y="0" width="132" height="78" rx="14" fill="#ecd8bd"/>
+    <rect x="14"  y="92" width="70" height="7" rx="3.5" fill="#cbbda4"/>
+    <rect x="14"  y="108" width="100" height="7" rx="3.5" fill="#dcd2bd"/>
+    <rect x="14"  y="122" width="46" height="8" rx="8" fill="url(#ac)"/>
+
+    <rect x="176" width="132" height="140" rx="14" fill="#f7efe0"/>
+    <rect x="176" y="0" width="132" height="78" rx="14" fill="#e4c8a8"/>
+    <rect x="190" y="92" width="64" height="7" rx="3.5" fill="#cbbda4"/>
+    <rect x="190" y="108" width="100" height="7" rx="3.5" fill="#dcd2bd"/>
+    <rect x="190" y="122" width="46" height="8" rx="8" fill="url(#ac)"/>
+
+    <rect x="352" width="132" height="140" rx="14" fill="#f7efe0"/>
+    <rect x="352" y="0" width="132" height="78" rx="14" fill="#efd9bc"/>
+    <rect x="366" y="92" width="60" height="7" rx="3.5" fill="#cbbda4"/>
+    <rect x="366" y="108" width="100" height="7" rx="3.5" fill="#dcd2bd"/>
+    <rect x="366" y="122" width="46" height="8" rx="8" fill="url(#ac)"/>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf6ec"/>
+      <stop offset="1" stop-color="#f0dfc4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.12" r="0.55">
+      <stop offset="0" stop-color="#e3b882" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#e3b882" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d49a66"/>
+      <stop offset="1" stop-color="#b0794f"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#6f5c44" flood-opacity="0.20"/></filter>
+  </defs>
+  <rect width="800" height="560" fill="url(#bg)"/>
+  <rect width="800" height="560" fill="url(#glow)"/>
+  <circle cx="96" cy="470" r="150" fill="#c99257" opacity="0.10"/>
+
+  <!-- 手机 -->
+  <rect x="312" y="56" width="176" height="444" rx="30" fill="#2c241c" filter="url(#sh)"/>
+  <rect x="322" y="66" width="156" height="424" rx="24" fill="#fffdf9"/>
+
+  <!-- 顶部标题 -->
+  <rect x="344" y="84" width="112" height="8" rx="4" fill="#cfc3ad"/>
+  <circle cx="358" cy="110" r="6" fill="url(#ac)"/>
+  <rect x="372" y="106" width="70" height="8" rx="4" fill="#4a3a2a"/>
+
+  <!-- 结余卡片 -->
+  <rect x="344" y="136" width="112" height="66" rx="12" fill="#f5ecdc"/>
+  <rect x="356" y="150" width="40" height="7" rx="3.5" fill="#c9b89b"/>
+  <rect x="356" y="166" width="66" height="11" rx="5.5" fill="#4a3a2a"/>
+
+  <!-- 柱状图 -->
+  <g transform="translate(352,232)">
+    <rect x="0"  y="60" width="20" height="40" rx="6" fill="#e7d7bb"/>
+    <rect x="28" y="34" width="20" height="66" rx="6" fill="url(#ac)"/>
+    <rect x="56" y="70" width="20" height="30" rx="6" fill="#e7d7bb"/>
+    <rect x="84" y="46" width="20" height="54" rx="6" fill="#e7d7bb"/>
+    <rect x="0"  y="60" width="20" height="40" rx="6" fill="url(#ac)" opacity="0.55"/>
+    <rect x="56" y="70" width="20" height="30" rx="6" fill="url(#ac)" opacity="0.55"/>
+  </g>
+  <rect x="360" y="330" width="80" height="7" rx="3.5" fill="#c9b89b"/>
+
+  <!-- 底部快捷 -->
+  <rect x="322" y="368" width="52" height="60" rx="12" fill="#f5ecdc"/>
+  <circle cx="348" cy="388" r="9" fill="url(#ac)"/>
+  <path d="M344 388h8M348 384v8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <rect x="322" y="434" width="52" height="6" rx="3" fill="#d8c9ad"/>
+  <rect x="382" y="368" width="52" height="60" rx="12" fill="#f5ecdc"/>
+  <circle cx="408" cy="388" r="9" fill="none" stroke="url(#ac)" stroke-width="2"/>
+  <path d="M404 388h8M408 384v8" stroke="url(#ac)" stroke-width="2" stroke-linecap="round" opacity="0"/>
+  <rect x="382" y="434" width="52" height="6" rx="3" fill="#d8c9ad" opacity="0.6"/>
+  <rect x="442" y="368" width="52" height="60" rx="12" fill="#f5ecdc"/>
+  <rect x="454" y="380" width="28" height="28" rx="8" fill="url(#ac)"/>
+  <rect x="442" y="434" width="52" height="6" rx="3" fill="#d8c9ad" opacity="0.35"/>
+</svg>

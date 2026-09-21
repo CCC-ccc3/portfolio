@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#312a20"/>
+      <stop offset="1" stop-color="#1a1712"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d89967"/>
+      <stop offset="1" stop-color="#b0794f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#deab76" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#deab76" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d89967"/>
+      <stop offset="1" stop-color="#b0794f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="url(#bg)"/>
+  <circle cx="400" cy="250" r="210" fill="url(#glow)"/>
+
+  <!-- 粒子地图 -->
+  <g fill="#d8b080" opacity="0.8">
+    <circle cx="210" cy="180" r="4"/>
+    <circle cx="300" cy="150" r="3"/>
+    <circle cx="252" cy="300" r="5"/>
+    <circle cx="352" cy="340" r="3"/>
+    <circle cx="468" cy="170" r="6"/>
+    <circle cx="520" cy="290" r="4"/>
+    <circle cx="430" cy="360" r="4"/>
+    <circle cx="588" cy="208" r="3"/>
+  </g>
+  <g fill="none" stroke="#c9965b" stroke-width="2.5" opacity="0.55">
+    <path d="M210 180 L300 150 L352 340 L430 360 L520 290 L468 170 L400 142"/>
+    <path d="M252 300 L352 340"/>
+  </g>
+  <circle cx="300" cy="150" r="22" fill="none" stroke="#d8a26a" stroke-opacity="0.4"/>
+  <circle cx="468" cy="170" r="8" fill="#e0b07a" opacity="0.6"/>
+
+  <!-- 标题 -->
+  <text x="92" y="86" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#f4e9d5">城市脉搏</text>
+  <rect x="92" y="102" width="120" height="4" rx="2" fill="url(#acc)"/>
+  <text x="92" y="132" font-family="Arial,sans-serif" font-size="16" fill="#cbb88f">实时交通 · 天气 · 城市运行</text>
+
+  <!-- 统计卡 -->
+  <g transform="translate(92,430)">
+    <rect x="0"   width="150" height="82" rx="14" fill="#262119" stroke="#3a312a" stroke-width="1.5"/>
+    <text x="22" y="34" font-family="Arial,sans-serif" font-size="22" fill="#f4e9d5">1.2万</text>
+    <rect x="22" y="48" width="70" height="8" rx="4" fill="#c9965b" opacity="0.7"/>
+    <text x="22" y="70" font-size="12" fill="#cbb88f">实时交通</text>
+    <rect x="170" y="0" width="150" height="82" rx="14" fill="#262119" stroke="#3a312a" stroke-width="1.5"/>
+    <rect x="188" y="24" width="46" height="26" rx="8" fill="url(#acc)"/>
+    <text x="244" y="42" font-family="Arial,sans-serif" font-size="20" fill="#f4e9d5">晴 26°</text>
+    <text x="244" y="62" font-size="12" fill="#cbb88f">当前天气</text>
+    <rect x="340" y="0" width="150" height="82" rx="14" fill="#262119" stroke="#3a312a" stroke-width="1.5"/>
+    <text x="360" y="38" font-family="Arial,sans-serif" font-size="20" fill="#f4e9d5">拥堵 2</text>
+    <text x="360" y="62" font-size="12" fill="#cbb88f">实时路况</text>
+    <rect x="510" y="0" width="198" height="82" rx="14" fill="#262119" stroke="#3a312a" stroke-width="1.5"/>
+    <rect x="528" y="20" width="162" height="34" rx="8" fill="#e0b07a" opacity="0.28"/>
+    <path d="M536 46 q34 -20 60 0 t58 -4" stroke="#f4e9d5" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="528" y="72" font-size="12" fill="#cbb88f">交通指数趋势</text>
+  </g>
+</svg>

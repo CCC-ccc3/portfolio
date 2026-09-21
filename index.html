@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="小张 · 软件工程学生作品集，AI 辅助开发 / 大语言模型应用方向，用于学业与求职展示。" />
+  <title>小张 · 个人作品集</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <!-- ======================= 左侧：固定侧边栏 ======================= -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+
+        <!-- 头像：本地人物照片 -->
+        <div class="avatar">
+          <img src="assets/images/1.png"
+               alt="小张 · 个人头像" loading="lazy" />
+        </div>
+
+        <!-- 姓名 + 头衔 + 一句话简介 -->
+        <div class="identity">
+          <h1 class="name">小张</h1>
+          <p class="role">软件工程学生 · AI 辅助开发 / 大语言模型应用</p>
+          <p class="bio">
+            关注 AI 辅助开发与大语言模型技术，使用 Python、Java 与 TypeScript 进行项目开发。
+          </p>
+        </div>
+
+        <!-- 导航菜单 -->
+        <nav class="nav" aria-label="主导航">
+          <a href="#home" class="nav-link active">首页</a>
+          <a href="#projects" class="nav-link">项目作品</a>
+          <a href="#about" class="nav-link">关于我</a>
+          <a href="#contact" class="nav-link">联系方式</a>
+        </nav>
+
+        <!-- 技能方向 -->
+        <section class="skills" aria-label="技能方向">
+          <h2 class="section-title">技能方向</h2>
+
+          <div class="skill-group">
+            <p class="skill-label">开发技能</p>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">HTML / CSS</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 基础个人信息标签 -->
+        <section class="meta" aria-label="个人信息">
+          <p><span class="meta-key">专业</span><span class="meta-val">软件工程</span></p>
+          <p><span class="meta-key">方向</span><span class="meta-val">AI 辅助开发 · 大模型应用</span></p>
+          <p><span class="meta-key">城市</span><span class="meta-val">中国 · 广州</span></p>
+          <p><span class="meta-key">状态</span><span class="meta-val">广州软件学院 · 在读</span></p>
+        </section>
+
+      </div>
+    </aside>
+
+    <!-- ======================= 右侧：主内容滚动区 ======================= -->
+    <main class="main">
+
+      <!-- 首页欢迎 / 简介 -->
+      <section id="home" class="hero reveal">
+        <p class="hero-eyebrow">HI, 欢迎来到我的作品集</p>
+        <h2 class="hero-title">你好，我是小张</h2>
+        <p class="hero-text">
+          我叫小张，是一名软件工程专业学生，目前主要关注 AI 辅助开发与大语言模型技术。
+          平时主要使用 Python、Java 和 TypeScript 进行项目开发，也在持续学习前后端开发、
+          数据可视化和 AI 应用构建。
+        </p>
+        <a href="#projects" class="btn">查看项目作品 <span class="btn-arrow">→</span></a>
+
+        <!-- 装饰：轻科技代码意象，填补留白（纯视觉，无信息） -->
+        <div class="hero-art" aria-hidden="true">
+          <span class="art-bracket">&lt;/&gt;</span>
+          <span class="art-line"></span>
+          <span class="art-slash">// HELLO_WORLD</span>
+          <span class="art-line"></span>
+          <span class="art-codedots">{ } · [ ]</span>
+        </div>
+      </section>
+
+      <!-- 项目作品 -->
+      <section id="projects" class="projects">
+        <header class="section-head reveal">
+          <h2 class="section-heading">项目作品</h2>
+          <p class="section-sub">在实践中打磨技术，每个项目都是一次完整的思考与交付。</p>
+        </header>
+
+        <!-- ================= 项目块模板（复制整段即可新增，注意版式交替） ================= -->
+        <!-- 项目一：轻记账 -->
+        <article class="project reveal">
+          <div class="project-media">
+            <img src="assets/images/project-accounting.svg"
+                 alt="轻记账 · 极简记账微信小程序界面" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <span class="project-category">移动应用</span>
+              <span class="project-date">2025 年 4 月</span>
+            </div>
+            <h3 class="project-title">轻记账</h3>
+            <p class="project-desc">
+              “轻记账”是一款面向日常生活场景的极简记账微信小程序，重点解决快速记录和查看个人收支的问题。
+              项目支持语音快捷记账、月度收支统计与预算提醒，并使用微信云开发完成数据存储与后端能力。
+            </p>
+            <ul class="tech-list">
+              <li>TypeScript</li>
+              <li>微信小程序</li>
+              <li>微信云开发</li>
+              <li>ECharts</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 项目二：拾光集市 -->
+        <article class="project is-reverse reveal">
+          <div class="project-media">
+            <img src="assets/images/project-market.svg"
+                 alt="拾光集市 · 校园二手交易平台界面" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <span class="project-category">Web 应用</span>
+              <span class="project-date">2025 年 9 月</span>
+            </div>
+            <h3 class="project-title">拾光集市</h3>
+            <p class="project-desc">
+              “拾光集市”是一个面向校园场景的二手交易平台，提供商品发布、关键词检索、站内私信与信用评分等功能。
+              从需求梳理、界面设计到主要接口开发均独立完成，上线测试后累计注册用户超过 300 人。
+            </p>
+            <ul class="tech-list">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+              <li>TypeScript</li>
+              <li>Vue</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 项目三：城市脉搏 -->
+        <article class="project reveal">
+          <div class="project-media">
+            <img src="assets/images/project-city.svg"
+                 alt="城市脉搏 · 交通与天气数据可视化大屏" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <span class="project-category">数据可视化</span>
+              <span class="project-date">2026 年 3 月</span>
+            </div>
+            <h3 class="project-title">城市脉搏</h3>
+            <p class="project-desc">
+              “城市脉搏”是一个城市实时交通与天气数据可视化大屏，用于集中展示交通、天气与城市运行信息。
+              项目通过多数据源轮询聚合数据，并结合 SVG 图表、Canvas 粒子地图和响应式布局实现大屏可视化展示。
+            </p>
+            <ul class="tech-list">
+              <li>TypeScript</li>
+              <li>HTML / CSS</li>
+              <li>Canvas</li>
+              <li>SVG</li>
+              <li>ECharts</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 项目四：课语通 -->
+        <article class="project is-reverse reveal">
+          <div class="project-media">
+            <img src="assets/images/project-gpt.svg"
+                 alt="课语通 · 基于大语言模型的课程问答助手" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <span class="project-category">AI 应用</span>
+              <span class="project-date">2026 年 7 月</span>
+            </div>
+            <h3 class="project-title">课语通</h3>
+            <p class="project-desc">
+              “课语通”是一个基于大语言模型的课程问答助手。用户上传课程资料后，系统能够建立知识索引，
+              根据课程内容回答问题，并提供引用出处与知识点小测，帮助学生快速复习和整理课程重点。
+            </p>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>RAG</li>
+              <li>向量检索</li>
+              <li>大模型 API</li>
+              <li>Streamlit</li>
+            </ul>
+          </div>
+        </article>
+        <!-- ============ 新增项目：复制上面任意 <article class="project reveal"> 即可 ============ -->
+
+      </section>
+
+      <!-- 关于我 -->
+      <section id="about" class="about">
+        <header class="section-head reveal">
+          <h2 class="section-heading">关于我</h2>
+        </header>
+
+        <div class="about-block reveal">
+          <h3 class="about-title">个人简介</h3>
+          <p>
+            我叫小张，是一名软件工程专业学生，目前主要关注 AI 辅助开发与大语言模型技术。
+            平时主要使用 Python、Java 和 TypeScript 进行项目开发，也在持续学习前后端开发、
+            数据可视化和 AI 应用构建。
+          </p>
+        </div>
+      </section>
+
+      <!-- 联系方式 -->
+      <section id="contact" class="contact">
+        <header class="section-head reveal">
+          <h2 class="section-heading">联系方式</h2>
+        </header>
+
+        <div class="contact-grid reveal">
+          <a href="mailto:xiaohe@example.com" class="contact-card">
+            <span class="contact-label">邮箱</span>
+            <span class="contact-value">xiaohe@example.com</span>
+          </a>
+          <div class="contact-card">
+            <span class="contact-label">微信</span>
+            <span class="contact-value">xiaohezi</span>
+          </div>
+          <a href="https://github.com/xiaohe-dev" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/xiaohe-dev</span>
+          </a>
+          <div class="contact-card">
+            <span class="contact-label">所在地</span>
+            <span class="contact-value">中国 · 广州</span>
+          </div>
+          <a href="https://xiaohe.dev" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-label">个人主页</span>
+            <span class="contact-value">xiaohe.dev</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 页脚 -->
+      <footer class="footer">
+        <p>© 2026 小张 · 个人作品集</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
